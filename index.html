@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pasindu Jayasinghe — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ──────────────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">PJ<span class="logo-box">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="mailto:thisarajayasinghe07@gmail.com" class="nav-cta">Say hello →</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow mono" data-hero>// problem statement</div>
+        <h1 class="hero-title">
+          <span class="line"><span class="line-inner">FULL-STACK</span></span>
+          <span class="line"><span class="line-inner">SOFTWARE</span></span>
+          <span class="line"><span class="line-inner hl-cyan">ENGINEER<span class="cursor-block">_</span></span></span>
+        </h1>
+
+        <!-- Signature: the objective function -->
+        <div class="objective-card" data-hero>
+          <p class="mono"><span class="kw">maximize:</span> impact × craft</p>
+          <p class="mono"><span class="kw">subject to:</span> clean architecture ≥ always,</p>
+          <p class="mono indent">stack ∈ { .NET, React, Next.js, Sitecore }</p>
+        </div>
+
+        <div class="hero-actions" data-hero>
+          <a href="#projects" class="btn btn-solid" data-magnetic>View projects</a>
+          <a href="#contact" class="btn btn-outline" data-magnetic>Get in touch</a>
+        </div>
+
+        <div class="hero-stats" data-hero>
+          <div class="stat">
+            <span class="stat-num" data-count="4">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">years experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">projects shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="2">0</span><span class="stat-plus"></span>
+            <span class="stat-label">degrees</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame" data-hero-photo>
+          <img src="Pasindu.jpg" alt="Pasindu Jayasinghe" class="hero-photo-img" />
+        </div>
+        <div class="sticker sticker-company" data-sticker>
+          <span class="mono">currently @</span>
+          <strong>SITECORE</strong>
+        </div>
+        <div class="sticker sticker-status" data-sticker>⚡ shipping</div>
+        <div class="hero-code-card" data-sticker>
+          <div class="code-dots"><span></span><span></span><span></span></div>
+          <pre><code><span class="c-kw">const</span> engineer = {
+  name: <span class="c-str">"Pasindu"</span>,
+  base: <span class="c-str">"Kandy, LK"</span>,
+  open: <span class="c-bool">true</span>
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE ──────────────────────────────────────────────────── -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track" id="marqueeA">
+      <span>DESIGN ✦ BUILD ✦ OPTIMIZE ✦ SHIP ✦ </span><span>DESIGN ✦ BUILD ✦ OPTIMIZE ✦ SHIP ✦ </span><span>DESIGN ✦ BUILD ✦ OPTIMIZE ✦ SHIP ✦ </span>
+    </div>
+  </div>
+  <div class="marquee-strip marquee-strip-alt" aria-hidden="true">
+    <div class="marquee-track" id="marqueeB">
+      <span>.NET ✦ REACT ✦ NEXT.JS ✦ SITECORE ✦ AZURE ✦ </span><span>.NET ✦ REACT ✦ NEXT.JS ✦ SITECORE ✦ AZURE ✦ </span><span>.NET ✦ REACT ✦ NEXT.JS ✦ SITECORE ✦ AZURE ✦ </span>
+    </div>
+  </div>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="constraint-tag mono" data-reveal>s.t. // about me</div>
+      <div class="about-grid">
+        <div class="about-text" data-reveal>
+          <h2 class="section-title">Engineering<br/><span class="hl-yellow">thoughtful</span> software</h2>
+          <p>I'm a software engineer at <strong>Sitecore</strong>, working with the Sitecore AI framework, Next.js, Content SDK, and Pages Editor to deliver modern headless CMS experiences.</p>
+          <p>Before that I led development projects at <strong>Bitzify</strong> — the official Sri Dalada Dakma website, a flight booking engine, and enterprise ERP integrations. I hold an honours degree in Statistics &amp; Operations Research from the University of Peradeniya and am pursuing my B.IT at the University of Moratuwa.</p>
+          <p>Outside of work I build personal products, contribute to open source, and stay obsessed with developer tooling and architecture patterns.</p>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/thisara-pasindu-jayasinghe-0289271a4/" target="_blank" rel="noreferrer" class="chip-link">LinkedIn ↗</a>
+            <a href="https://github.com/PasinduJayasinghe" target="_blank" rel="noreferrer" class="chip-link">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="about-aside">
+          <div class="brut-card" data-reveal>
+            <h3 class="card-label mono">education</h3>
+            <ul class="edu-list">
+              <li>
+                <span class="edu-year mono">2024–26</span>
+                <div><strong>B.Sc. Information Technology</strong><p>University of Moratuwa</p></div>
+              </li>
+              <li>
+                <span class="edu-year mono">2019–24</span>
+                <div><strong>B.Sc. Statistics &amp; Operations Research (Hons)</strong><p>University of Peradeniya</p></div>
+              </li>
+            </ul>
+          </div>
+          <div class="brut-card card-cyan" data-reveal>
+            <h3 class="card-label mono">interests</h3>
+            <div class="tag-cloud">
+              <span class="tag">Clean Architecture</span>
+              <span class="tag">DDD</span>
+              <span class="tag">AI tooling</span>
+              <span class="tag">Headless CMS</span>
+              <span class="tag">Open Source</span>
+              <span class="tag">DevOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ───────────────────────────────────────────────── -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="constraint-tag constraint-tag-invert mono" data-reveal>s.t. // experience</div>
+      <h2 class="section-title title-invert" data-reveal>Where I've <span class="hl-pink">worked</span></h2>
+      <div class="timeline">
+        <div class="timeline-spine" id="timelineSpine"></div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="tl-date-tab mono">2024 — now</div>
+          <div class="brut-card tl-card">
+            <div class="tl-header">
+              <h3>Software Engineer</h3>
+              <span class="tl-company">Sitecore</span>
+            </div>
+            <p>Working with Sitecore AI framework, Next.js, Sitecore Content SDK, Content Editor and Pages Editor, Agentic Studio, and Sitecore Marketer MCP to deliver modern headless CMS experiences.</p>
+            <div class="tl-tags mono">
+              <span>Next.js</span><span>Sitecore AI</span><span>Content SDK</span><span>Agentic Studio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="tl-date-tab mono">2024 — 25</div>
+          <div class="brut-card tl-card">
+            <div class="tl-header">
+              <h3>Software Engineering Intern (.NET)</h3>
+              <span class="tl-company">Bitzify</span>
+            </div>
+            <p>Led full-stack development of the Sri Dalada Dakma official website. Contributed to the Kandy City Centre POS System, the IFS Permission Tool (Serilog logging), and Olivetta Odoo ERP integration with Shopify and external logistics APIs.</p>
+            <div class="tl-tags mono">
+              <span>.NET Core</span><span>ReactJS</span><span>Docker</span><span>Odoo ERP</span><span>IFS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="tl-date-tab mono">2023</div>
+          <div class="brut-card tl-card">
+            <div class="tl-header">
+              <h3>Operations Planning Intern</h3>
+              <span class="tl-company">MAS Active</span>
+            </div>
+            <p>Developed weekly production plans using SAP ERP and FastReact. Built Power Automate automation solutions and designed the Planning Department's internal website deployed on MS Azure.</p>
+            <div class="tl-tags mono">
+              <span>SAP ERP</span><span>Power Automate</span><span>MS Azure</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─────────────────────────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="constraint-tag mono" data-reveal>s.t. // projects</div>
+      <h2 class="section-title" data-reveal>Things I've <span class="hl-cyan">built</span></h2>
+      <div class="projects-grid">
+
+        <article class="brut-card project-card featured" data-reveal>
+          <div class="project-top">
+            <span class="project-badge mono">featured</span>
+            <a href="https://github.com/PasinduJayasinghe" target="_blank" rel="noreferrer" aria-label="GitHub" class="project-gh">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+          <h3>Season Travels — Flight Booking Engine</h3>
+          <p>Full MVP for a flight booking engine featuring JWT authentication, customer management, Amadeus API integration for ticket sales, and an AI-powered chatbot. Built with clean architecture.</p>
+          <div class="tl-tags mono">
+            <span>.NET Core</span><span>ReactJS</span><span>MySQL</span><span>Amadeus API</span>
+          </div>
+        </article>
+
+        <article class="brut-card project-card" data-reveal>
+          <h3>Sri Dalada Dakma Official Website</h3>
+          <p>Led full-stack development of the official event website — a joint project between Sri Dalada Maligawa and Bitzify. Designed the UI and built both frontend and backend.</p>
+          <div class="tl-tags mono">
+            <span>.NET Core</span><span>ReactJS</span><span>Docker</span>
+          </div>
+        </article>
+
+        <article class="brut-card project-card" data-reveal>
+          <h3>Patient &amp; Clinic Booking System</h3>
+          <p>Industry-level freelance project — patient registration, appointment scheduling, clinic management, doctor profiles and medical records, following clean architecture and SOLID.</p>
+          <div class="tl-tags mono">
+            <span>.NET Core</span><span>Angular</span><span>Azure</span>
+          </div>
+        </article>
+
+        <article class="brut-card project-card" data-reveal>
+          <h3>Olivetta Odoo ERP Integration</h3>
+          <p>Automated integration for an Australian client synchronising Shopify orders, Odoo ERP inventory, and an external logistics API in real time using custom Odoo modules.</p>
+          <div class="tl-tags mono">
+            <span>Python</span><span>Odoo</span><span>Shopify API</span>
+          </div>
+        </article>
+
+        <article class="brut-card project-card" data-reveal>
+          <h3>Kasun Super Inventory System</h3>
+          <p>Comprehensive IMS for a grocery store — real-time stock tracking, sales reporting, role-based access, supplier management, and an analytics dashboard.</p>
+          <div class="tl-tags mono">
+            <span>C# WinForms</span><span>MS SQL</span>
+          </div>
+        </article>
+
+        <article class="brut-card project-card" data-reveal>
+          <h3>OOBEYA Room Website</h3>
+          <p>Cloud-hosted internal site for MAS Active Planning Department, replacing manual MOS activity tracking. Final-year industrial project, deployed on MS Azure.</p>
+          <div class="tl-tags mono">
+            <span>HTML/CSS/JS</span><span>Azure</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ───────────────────────────────────────────────────── -->
+  <section id="skills" class="section section-cyan">
+    <div class="container">
+      <div class="constraint-tag mono" data-reveal>s.t. // skills</div>
+      <h2 class="section-title" data-reveal>Tech I work with</h2>
+      <div class="skills-layout">
+        <div class="brut-card skill-group" data-reveal>
+          <h3 class="card-label mono">languages</h3>
+          <div class="skill-pills">
+            <span class="pill">C#</span><span class="pill">TypeScript</span><span class="pill">JavaScript</span><span class="pill">Python</span><span class="pill">C</span><span class="pill">R</span>
+          </div>
+        </div>
+        <div class="brut-card skill-group" data-reveal>
+          <h3 class="card-label mono">frameworks</h3>
+          <div class="skill-pills">
+            <span class="pill pill-hl">.NET Core</span><span class="pill pill-hl">Next.js</span><span class="pill pill-hl">React</span><span class="pill">Angular</span><span class="pill">Tailwind</span><span class="pill">.NET Aspire</span><span class="pill">Odoo ERP</span>
+          </div>
+        </div>
+        <div class="brut-card skill-group" data-reveal>
+          <h3 class="card-label mono">databases</h3>
+          <div class="skill-pills">
+            <span class="pill">MS SQL</span><span class="pill">MySQL</span><span class="pill">PostgreSQL</span><span class="pill">MongoDB</span>
+          </div>
+        </div>
+        <div class="brut-card skill-group" data-reveal>
+          <h3 class="card-label mono">sitecore &amp; cms</h3>
+          <div class="skill-pills">
+            <span class="pill pill-hl">XM Cloud</span><span class="pill pill-hl">Content SDK</span><span class="pill pill-hl">Sitecore AI</span><span class="pill">Agentic Studio</span><span class="pill">Pages</span><span class="pill">JSS SDK</span>
+          </div>
+        </div>
+        <div class="brut-card skill-group" data-reveal>
+          <h3 class="card-label mono">devops &amp; cloud</h3>
+          <div class="skill-pills">
+            <span class="pill">Git</span><span class="pill">GitHub Actions</span><span class="pill">Docker</span><span class="pill">MS Azure</span>
+          </div>
+        </div>
+        <div class="brut-card skill-group" data-reveal>
+          <h3 class="card-label mono">architecture</h3>
+          <div class="skill-pills">
+            <span class="pill">Clean Architecture</span><span class="pill">SOLID</span><span class="pill">CQRS</span><span class="pill">Mediator</span><span class="pill">Repository</span><span class="pill">DDD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTS ─────────────────────────────────────────────────────── -->
+  <section id="certs" class="section">
+    <div class="container">
+      <div class="constraint-tag mono" data-reveal>s.t. // credentials</div>
+      <h2 class="section-title" data-reveal>Learning never stops</h2>
+      <div class="certs-row">
+        <div class="brut-card cert-card" data-reveal>
+          <div class="cert-icon">🏅</div>
+          <div>
+            <h4>Advanced .NET Full-Stack &amp; Microservices Bootcamp</h4>
+            <p class="mono">Developers Stack · Jan 2025</p>
+          </div>
+        </div>
+        <div class="brut-card cert-card" data-reveal>
+          <div class="cert-icon">🎓</div>
+          <div>
+            <h4>Machine Learning Specialization</h4>
+            <p class="mono">Stanford · Coursera · Jul 2020</p>
+          </div>
+        </div>
+        <div class="brut-card cert-card" data-reveal>
+          <div class="cert-icon">💻</div>
+          <div>
+            <h4>CSUP Bootcamp 2020</h4>
+            <p class="mono">CS Society, University of Peradeniya · Mar 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ──────────────────────────────────────────────────── -->
+  <section id="contact" class="section section-yellow">
+    <div class="container contact-container">
+      <div class="constraint-tag mono" data-reveal>optimal solution found</div>
+      <h2 class="section-title" data-reveal>Let's build something<br/>together<span class="hl-cyan">.</span></h2>
+      <p class="contact-sub" data-reveal>Open to new opportunities, collaborations, or just a conversation about technology. Drop me a message.</p>
+      <div class="contact-cards">
+        <a href="mailto:thisarajayasinghe07@gmail.com" class="brut-card contact-card" data-reveal id="emailCard">
+          <span class="cc-label mono">email</span>
+          <span class="cc-value">thisarajayasinghe07@gmail.com</span>
+        </a>
+        <a href="tel:+94756975298" class="brut-card contact-card" data-reveal>
+          <span class="cc-label mono">phone</span>
+          <span class="cc-value">+94 75 697 5298</span>
+        </a>
+        <a href="https://www.linkedin.com/in/thisara-pasindu-jayasinghe-0289271a4/" target="_blank" rel="noreferrer" class="brut-card contact-card" data-reveal>
+          <span class="cc-label mono">linkedin</span>
+          <span class="cc-value">Connect with me ↗</span>
+        </a>
+        <a href="https://github.com/PasinduJayasinghe" target="_blank" rel="noreferrer" class="brut-card contact-card" data-reveal>
+          <span class="cc-label mono">github</span>
+          <span class="cc-value">See my code ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-logo">PJ<span class="logo-box">.</span></span>
+      <p class="mono">© <span id="year">2026</span> Pasindu Jayasinghe · Kandy, Sri Lanka</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
